@@ -1,4 +1,5 @@
 a = input("enter a file name (eg: abc.png)")
-for i in a[::-1]:
-    if i==".":
-        print(a[a.index("."):])
+b = a[::-1]
+c = b.index(".")
+a = b[:c]
+print("Extension is :", a[::-1])
